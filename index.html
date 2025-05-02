@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devins GPT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/cpp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="system-prompt-container">
+            <h2>System Instructions</h2>
+            <textarea id="systemPrompt" rows="3"></textarea>
+            <button id="updatePromptBtn">Update Instructions</button>
+            <div id="updateNotification" class="update-notification hidden">Updated!</div>
+        </div>
+        <div class="container">
+            <h1>Devins GPT</h1>
+            <div class="chat-container" id="chatContainer"></div>
+            <div id="scrollBottom" class="scroll-bottom hidden">
+                <button id="scrollBottomBtn">↓</button>
+            </div>
+            <div class="input-container">
+                <!-- Change input to textarea -->
+                <textarea id="userInput" placeholder="Type your message here..." rows="1"></textarea>
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
